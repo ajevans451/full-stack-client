@@ -4,7 +4,7 @@
 ### Important Links
 - Deployed Client
 - Deployed API
-- Other Repo
+- [Other Repo](https://github.com/ajevans451/full-stack-api)
 
 ### Planning Story
 
