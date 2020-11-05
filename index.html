@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>DnD Character Maker</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Do not add `link` tags-->
@@ -12,6 +12,26 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
+      <h1>Dungeons & Dragons Character Maker</h1>
+      <p id='status-message'> </p>
+      <form id='sign-up-form'>
+        <h3>Sign Up</h3>
+        <label for='sign-up-email'>Email:</label>
+        <label for='sign-up-pw'>Password:</label>
+        <label for='sign-up-pw-confirm'>Password Confirmation:</label>
+      </form>
+      <form id='sign-in-form'>
+        <h3>Sign In</h3>
+        <label for='sign-in-email'>Email:</label>
+        <label for='sign-in-pw'>Password:</label>
+      </form>
+      <form id='change-pw-form'>
+        <h3>Change Password</h3>
+        <label for='old-pw'>Old Password:</label>
+        <label for='new-pw'>New Password:</label>
+      </form>
+      <form id='sign-out-form'>
+        <h3>Sign Out</h3>
+      </form>
     </body>
 </html>
