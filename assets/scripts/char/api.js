@@ -12,7 +12,7 @@ const createChar = function (data) {
       data: data
   })
 }
-const charIndex = function (data) {
+const charIndex = function () {
   return $.ajax({
     url: config.apiUrl + '/characters',
     method: 'GET',
@@ -24,7 +24,7 @@ const charIndex = function (data) {
 //need id
 const showChar = function (data) {
   return $.ajax({
-    url: config.apiUrl + '/characters',
+    url: config.apiUrl + '/characters/' + store.character._id,
     method: 'GET',
     headers: {
       Authorization: 'Bearer ' + store.user.token
@@ -34,7 +34,7 @@ const showChar = function (data) {
 //need id
 const updateChar = function (data) {
   return $.ajax({
-    url: config.apiUrl + '/characters',
+    url: config.apiUrl + '/characters/' + store.character._id,
     method: 'PATCH',
     headers: {
       Authorization: 'Bearer ' + store.user.token
@@ -45,7 +45,7 @@ const updateChar = function (data) {
 //need id
 const deleteChar = function (data) {
   return $.ajax({
-    url: config.apiUrl + '/characters',
+    url: config.apiUrl + '/characters/' + store.character._id,
     method: 'DELETE',
     headers: {
       Authorization: 'Bearer ' + store.user.token

@@ -25,8 +25,9 @@ const deleteCharacter = (event) => {
   event.preventDefault()
 }
 module.exports = {
-  signUp,
-  logIn,
-  changePW,
-  logOut
+  createCharacter,
+  indexCharacter,
+  showCharacter,
+  updateCharacter,
+  deleteCharacter
 }
