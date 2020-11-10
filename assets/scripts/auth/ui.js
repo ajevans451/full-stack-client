@@ -4,11 +4,13 @@ const signUpSuccess = function (res) {
   $('#sign-up-form').trigger('reset')
 }
 const signUpFailure = function (error) {
+  console.log(error)
   $('#status-message').text('Sign up failed, try again')
 }
 const logInSuccess = function (res) {
   $('#status-message').text('Sign in successful')
   $('#sign-in-form').trigger('reset')
+  store.user = response.user
 }
 const logInFailure = function (error) {
   $('#status-message').text('Sign in failed, try again')
