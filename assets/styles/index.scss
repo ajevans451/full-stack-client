@@ -1,12 +1,22 @@
 @import '~bootstrap/scss/bootstrap';
 body {
   background-color: #FFEEDB;
-  color: #246A73;
   margin: 5px;
-}
-h1 {
   color: #2D3142;
 }
-input {
+#auth {
+  input {
   color: #558C8C;
+}
+  h3 {
+    color: #246A73;
+  }
+}
+#content {
+  input {
+  color: #D77A61;
+}
+  h3 {
+    color: #BA3B46;
+  }
 }
