@@ -2,8 +2,8 @@
 
 
 ### Important Links
-- Deployed Client
-- Deployed API
+- [Deployed Client](https://ajevans451.github.io/full-stack-client/)
+- [Deployed API](https://dnd-character-creation.herokuapp.com/)
 - [Other Repo](https://github.com/ajevans451/full-stack-api)
 
 ### Planning Story
@@ -18,7 +18,12 @@
 - As a user, I want to be able to log out.
 
 #### Technologies Used
--
+- Javascript
+- HTML
+- Sass (CSS)
+- Bootstrap
+- jQuery
+
 
 #### Unsolved Problems
 -
