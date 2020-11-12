@@ -1,18 +1,50 @@
 @import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 body {
-  background-color: #FFEEDB;
+  background-image: url(https://www.wildtextures.com/wp-content/uploads/2011/11/wildtextures-old-paper-texture.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
   margin: 5px;
   color: #2D3142;
+  text-align: center;
+  font-family: 'Libre Baskerville', sans-serif;
+}
+h1 {
+  font-family: 'Cinzel', serif;
+}
+form{
+  margin: 5px;
+}
+label{
+  display: block;
+  margin-bottom: 0;
+}
+section {
+  background-color: rgba(255,238,219,.8);
+}
+input.input-group-text {
+  margin: 5px auto;
 }
 #auth {
+  width: 50%;
+  margin: 10px auto;
+  border: solid 3px #246A73;
+  border-radius: 7px;
+
   input {
-  color: #558C8C;
+    color: #558C8C;
 }
   h3 {
     color: #246A73;
   }
 }
 #content {
+  width: 50%;
+  margin: 10px auto;
+  border: solid 3px #BA3B46;
+  border-radius: 7px;
+
   input {
   color: #D77A61;
 }
