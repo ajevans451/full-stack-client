@@ -2,6 +2,7 @@
 const formFields = require('./../../../lib/get-form-fields.js')
 const api = require('./api')
 const ui = require('./ui')
+const store = require('./../store')
 
 // signup
 const signUp = (event) => {
@@ -33,7 +34,7 @@ const changePW = (event) => {
 }
 const logOut = (event) => {
   event.preventDefault()
-  api.logOut(data)
+  api.logOut()
   .then(ui.logOutSuccess)
   .catch(ui.logOutFailure)
 }
