@@ -11,11 +11,6 @@ const indexCharacter = (event) => {
   const form = event.target
   const data = formFields(form)
 }
-const showCharacter = (event) => {
-  event.preventDefault()
-  const form = event.target
-  const data = formFields(form)
-}
 const updateCharacter = (event) => {
   event.preventDefault()
   const form = event.target
@@ -27,7 +22,6 @@ const deleteCharacter = (event) => {
 module.exports = {
   createCharacter,
   indexCharacter,
-  showCharacter,
   updateCharacter,
   deleteCharacter
 }
