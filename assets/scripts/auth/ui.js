@@ -10,9 +10,17 @@ const signUpFailure = function (error) {
 }
 const logInSuccess = function (response) {
   $('#status-message').text('Sign in successful')
+  //reset forms
   $('#sign-in-form').trigger('reset')
+  $('#sign-up-form').trigger('reset')
   store.user = response.user
   store.user.token = response.user.token
+  //show signed in user forms
+  $('#sign-in-form').hide()
+  $('#sign-up-form').hide()
+  $('#change-pw-form').show()
+  $('#sign-out-form').show()
+  $('#content').show()
 }
 const logInFailure = function (error) {
   $('#status-message').text('Sign in failed, try again')
@@ -26,6 +34,12 @@ const changePWFailure = function (error) {
 }
 const logOutSuccess = function (response) {
   $('#status-message').text('Sign out successful')
+
+  $('#change-pw-form').hide()
+  $('#sign-out-form').hide()
+  $('#sign-in-form').show()
+  $('#sign-up-form').show()
+  $('#content').hide()
 }
 const logOutFailure = function (error) {
   $('#status-message').text('Sign out failed, try again')
