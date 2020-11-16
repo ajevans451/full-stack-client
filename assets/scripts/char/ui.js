@@ -26,7 +26,7 @@ $('#status-message').text('Deletion was successful')
 const charDeleteFailure = function (error) {
   $('#status-message').text('Could not delete character, try again')
 }
-module.exports {
+module.exports = {
   charCreateSuccess,
   charCreateFailure,
   charIndexSuccess,
