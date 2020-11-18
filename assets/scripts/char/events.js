@@ -8,23 +8,33 @@ const createCharacter = (event) => {
   event.preventDefault()
   const form = event.target
   const data = formFields(form)
-  api.createChar()
+  api.createChar(data)
+  .then(ui.charCreateSuccess)
+  .catch(ui.charCreateFailure)
 }
 const indexCharacter = (event) => {
   event.preventDefault()
   const form = event.target
   const data = formFields(form)
-  api.charIndex()
+  api.charIndex(data)
+  .then(ui.charIndexSuccess)
+  .catch(ui.charIndexFailure)
 }
 const updateCharacter = (event) => {
   event.preventDefault()
   const form = event.target
   const data = formFields(form)
-  api.updateChar()
+  api.updateChar(data)
+  .then(ui.charUpdateSuccess)
+  .catch(ui.charUpdateFailure)
 }
 const deleteCharacter = (event) => {
   event.preventDefault()
-  api.deleteChar()
+  const form = event.target
+  const data = formFields(form)
+  api.deleteChar(data)
+  .then(ui.charDeleteSuccess)
+  .catch(ui.charDeleteFailure)
 }
 module.exports = {
   createCharacter,
