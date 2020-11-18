@@ -22,15 +22,15 @@
         <h3>Sign Up</h3>
         <div class='input-group'>
           <label class='input-group-text'for='sign-up-email'>Email:</label>
-          <input class='form-control'required name='credentials[email]'id='sign-up-email' type='email' placeholder='Email'>
+          <input required class='form-control' name='credentials[email]'id='sign-up-email' type='email' placeholder='Email'>
         </div>
         <div class='input-group'>
           <label class='input-group-text' for='sign-up-pw'>Password:</label>
-          <input class='form-control' required name='credentials[password]'id='sign-up-pw' type='password' placeholder='Password'>
+          <input required class='form-control' name='credentials[password]'id='sign-up-pw' type='password' placeholder='Password'>
         </div>
         <div class='input-group'>
           <label class='input-group-text' for='sign-up-pw-confirm'>Password Confirmation:</label>
-          <input class='form-control' required name='credentials[password_confirmation]'id='sign-up-pw-confirm' type='password' placeholder='Confirm Password'>
+          <input required class='form-control' name='credentials[password_confirmation]'id='sign-up-pw-confirm' type='password' placeholder='Confirm Password'>
         </div>
         <input class='input-group-text' type='submit' value="Sign Up">
       </form>
@@ -41,11 +41,11 @@
         <h3>Sign In</h3>
         <div class='input-group'>
           <label class='input-group-text' for='sign-in-email'>Email:</label>
-          <input class='form-control' required name='credentials[email]'id='sign-in-email' type='email' placeholder='Email'>
+          <input required class='form-control' name='credentials[email]'id='sign-in-email' type='email' placeholder='Email'>
         </div>
         <div class='input-group'>
           <label class='input-group-text' for='sign-in-pw'>Password:</label>
-          <input class='form-control' required name='credentials[password]'id='sign-in-pw' type='password' placeholder='Password'>
+          <input required class='form-control' name='credentials[password]'id='sign-in-pw' type='password' placeholder='Password'>
         </div>
         <input class='input-group-text' type='submit' value="Sign In">
       </form>
@@ -56,11 +56,11 @@
         <h3>Change Password</h3>
         <div class='input-group'>
           <label class='input-group-text' for='old-pw'>Old Password:</label>
-          <input class='form-control' required name="passwords[old]"id='old-pw' type='password' placeholder='Password'>
+          <input required class='form-control' name="passwords[old]"id='old-pw' type='password' placeholder='Password'>
         </div>
         <div class='input-group'>
           <label class='input-group-text' for='new-pw'>New Password:</label>
-          <input class='form-control' required name="passwords[new]"id='new-pw' type='password' placeholder='Password'>
+          <input required class='form-control' name="passwords[new]"id='new-pw' type='password' placeholder='Password'>
         </div>
         <input class='input-group-text' type='submit' value="Change password">
       </form>
@@ -79,15 +79,15 @@
         <h3>Create New Character</h3>
         <div class='input-group'>
           <label class='input-group-text' for='char-create-name'>Character Name:</label>
-          <input class='form-control' required id='char-create-name' placeholder='Name'>
+          <input class='form-control' name='character[name]' required id='char-create-name' placeholder='Name'>
         </div>
         <div class='input-group'>
           <label class='input-group-text' for='char-create-race'>Character Race:</label>
-          <input class='form-control' required id='char-create-race' placeholder='Race'>
+          <input class='form-control' name='character[race]' required id='char-create-race' placeholder='Race'>
         </div>
         <div class='input-group'>
           <label class='input-group-text' for='char-create-class'>Character Class:</label>
-          <input class='form-control' required id='char-create-class' placeholder='Class'>
+          <input class='form-control' name='character[class]' required id='char-create-class' placeholder='Class'>
         </div>
         <input class='input-group-text' type='submit' value="Create Character">
       </form>
@@ -98,19 +98,19 @@
         <h3>Update Character</h3>
         <div class='input-group'>
           <label class='input-group-text' for='char-update-id'>Character ID:</label>
-          <input class='form-control' required id='char-update-id' placeholder='Character ID'> <!-- must update store.character._id to input -->
+          <input class='form-control' name='id' required id='char-update-id' placeholder='Character ID'> <!-- must update store.character._id to input -->
         </div>
         <div class='input-group'>
           <label class='input-group-text' for='char-update-name'>Character Name:</label>
-          <input class='form-control' required id='char-update-name' placeholder='Name'>
+          <input class='form-control' name='character[name]' required id='char-update-name' placeholder='Name'>
         </div>
         <div class='input-group'>
           <label class='input-group-text' for='char-update-race'>Character Race:</label>
-          <input class='form-control' required id='char-update-race' placeholder='Race'>
+          <input class='form-control' name='character[race]' required id='char-update-race' placeholder='Race'>
         </div>
         <div class='input-group'>
           <label class='input-group-text' for='char-update-class'>Character Class:</label>
-          <input class='form-control' required id='char-update-class' placeholder='Class'>
+          <input class='form-control' name='character[class]' required id='char-update-class' placeholder='Class'>
         </div>
         <input class='input-group-text' type='submit' value="Update Character">
       </form>
@@ -129,7 +129,7 @@
         <h3>Delete Character</h3>
         <div class='input-group'>
           <label class='input-group-text' for='char-delete-id'>Character ID:</label>
-          <input class='form-control' required id='char-delete-id' placeholder='Character ID'>
+          <input class='form-control' name='id' required id='char-delete-id' placeholder='Character ID'>
         </div>
         <input class='input-group-text' type='submit' value="Delete Character">
       </form></section>
