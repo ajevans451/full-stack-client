@@ -22,7 +22,7 @@ const charIndex = function () {
   })
 }
 //need id
-const showChar = function (data) {
+/* const showChar = function (data) {
   return $.ajax({
     url: config.apiUrl + '/characters/' + store.character._id,
     method: 'GET',
@@ -30,7 +30,7 @@ const showChar = function (data) {
       Authorization: 'Bearer ' + store.user.token
     }
   })
-}
+} */
 //need id
 const updateChar = function (data) {
   return $.ajax({
@@ -54,7 +54,6 @@ const deleteChar = function (data) {
 }
 module.exports = {
   createChar,
-  showChar,
   charIndex,
   deleteChar,
   updateChar
