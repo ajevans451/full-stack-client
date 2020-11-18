@@ -21,6 +21,8 @@ const logInSuccess = function (response) {
   $('#change-pw-form').show()
   $('#sign-out-form').show()
   $('#content').show()
+  $('#char-update-form').hide()
+  $('#char-delete-form').hide()
 }
 const logInFailure = function (error) {
   $('#status-message').text('Sign in failed, try again')

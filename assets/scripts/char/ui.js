@@ -10,6 +10,8 @@ const charCreateFailure = function (error) {
 }
 const charIndexSuccess = function (response) {
 $('#status-message').text('Showing characters')
+$('#char-update-form').hide()
+$('#char-delete-form').hide()
 }
 const charIndexFailure = function (error) {
   $('#status-message').text('Could not show characters, try again')
