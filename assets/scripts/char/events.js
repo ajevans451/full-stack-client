@@ -7,7 +7,9 @@ const store = require('./../store')
 const createCharacter = (event) => {
   event.preventDefault()
   const form = event.target
+  console.log(form)
   const data = formFields(form)
+  console.log(data)
   api.createChar(data)
   .then(ui.charCreateSuccess)
   .catch(ui.charCreateFailure)

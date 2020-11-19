@@ -10,8 +10,21 @@ const charCreateFailure = function (error) {
 }
 const charIndexSuccess = function (response) {
 $('#status-message').text('Showing characters')
-$('#char-update-form').hide()
-$('#char-delete-form').hide()
+$('#char-update-form').show()
+$('#char-delete-form').show()
+$('#char-index-message').text('Your Characters:')
+const char = response.characters
+char.forEach(function (currentCharacter){
+  const charHtml = (`
+      <div class='index-cell col-6'>
+      <p>ID: ${currentCharacter._id}<p>
+      <h5>Name: ${currentCharacter.name}</h5>
+      <p>Race: ${currentCharacter.race}<p>
+      <p>Class: ${currentCharacter.class}<p>
+      </div>
+    `)
+    $('#char-index').append(charHtml)
+})
 }
 const charIndexFailure = function (error) {
   $('#status-message').text('Could not show characters, try again')
