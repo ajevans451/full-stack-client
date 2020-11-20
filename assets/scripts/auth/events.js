@@ -10,7 +10,7 @@ const signUp = (event) => {
   const form = event.target
   const data = formFields(form)
   // const data = formFields.getFormFields(form)
-  console.log(data)
+  // console.log(data)
   api.signUp(data)
   .then(ui.signUpSuccess)
   .catch(ui.signUpFailure)
