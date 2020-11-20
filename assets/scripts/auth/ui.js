@@ -44,6 +44,7 @@ const logOutSuccess = function (response) {
   $('#content').hide()
   $('#char-create-form').trigger('reset')
   $('#char-update-form').trigger('reset')
+  $('#char-delete-form').trigger('reset')
 }
 const logOutFailure = function (error) {
   $('#status-message').text('Sign out failed, try again')

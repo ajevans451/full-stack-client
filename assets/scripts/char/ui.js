@@ -44,6 +44,7 @@ const charUpdateFailure = function (error) {
 }
 const charDeleteSuccess = function (response) {
 $('#status-message').text('Deletion was successful')
+$('#char-delete-form').trigger('reset')
 $('#char-index-message').text('Click the Show Characters button to see your characters')
 $('#char-index').empty()
 }
