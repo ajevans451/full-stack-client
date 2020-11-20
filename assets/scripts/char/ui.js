@@ -13,10 +13,11 @@ $('#status-message').text('Showing characters')
 $('#char-update-form').show()
 $('#char-delete-form').show()
 $('#char-index-message').text('Your Characters:')
-const char = response.characters
+const char = response
+console.log(char)
 char.forEach(function (currentCharacter){
   const charHtml = (`
-      <div class='index-cell col-6'>
+      <div class='index-cell col-12'>
       <p>ID: ${currentCharacter._id}<p>
       <h5>Name: ${currentCharacter.name}</h5>
       <p>Race: ${currentCharacter.race}<p>
