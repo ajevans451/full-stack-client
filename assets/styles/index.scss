@@ -1,12 +1,20 @@
 @import '~bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+$bg-color: rgba(255, 238, 219, .8);
+$dark-text: #2D3142;
+$light-text: #fffffa;
+$primary-green: #246A73;
+$secondary-green: #558C8C;
+$primary-red: #BA3B46;
+$secondary-red: #D77A61;
+
 body {
   background-image: url(https://www.wildtextures.com/wp-content/uploads/2011/11/wildtextures-old-paper-texture.jpg);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: auto;
   margin: 5px;
-  color: #2D3142;
+  color: $dark-text;
   text-align: center;
   font-family: 'Libre Baskerville', sans-serif;
 }
@@ -21,7 +29,7 @@ label{
   margin-bottom: 0;
 }
 section {
-  background-color: rgba(255, 238, 219, .8);
+  background-color: $bg-color;
 }
 input.input-group-text {
   margin: 5px auto;
@@ -29,26 +37,33 @@ input.input-group-text {
 #auth {
   width: 80%;
   margin: 10px auto;
-  border: solid 3px #246A73;
+  border: solid 3px $primary-green;
   border-radius: 7px;
 
   input {
-    color: #558C8C;
+    color: $secondary-green;
 }
   h3 {
-    color: #246A73;
+    color: $primary-green;
   }
 }
 #content {
   width: 80%;
   margin: 10px auto;
-  border: solid 3px #BA3B46;
+  border: solid 3px $primary-red;
   border-radius: 7px;
 
   input {
-  color: #D77A61;
+  color: $secondary-red;
 }
   h3 {
-    color: #BA3B46;
+    color: $primary-red;
   }
+}
+.index-cell {
+  border: solid 3px $dark-text;
+  border-radius: 7px;
+  background: transparentize($primary-red, 0.3);
+  color: $light-text;
+  padding: 3px;
 }
