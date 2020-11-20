@@ -17,7 +17,7 @@ const char = response
 console.log(char)
 char.forEach(function (currentCharacter){
   const charHtml = (`
-      <div class='index-cell col-12'>
+      <div class='index-cell col-6'>
       <p>ID: ${currentCharacter._id}<p>
       <h5>Name: ${currentCharacter.name}</h5>
       <p>Race: ${currentCharacter.race}<p>
