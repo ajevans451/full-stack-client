@@ -34,7 +34,7 @@ const charIndex = function () {
 //need id
 const updateChar = function (data) {
   return $.ajax({
-    url: config.apiUrl + '/characters/' + store.character._id,
+    url: config.apiUrl + '/characters/' + data.id,
     method: 'PATCH',
     headers: {
       Authorization: 'Bearer ' + store.user.token
@@ -45,7 +45,7 @@ const updateChar = function (data) {
 //need id
 const deleteChar = function (data) {
   return $.ajax({
-    url: config.apiUrl + '/characters/' + store.character._id,
+    url: config.apiUrl + '/characters/' + data.id,
     method: 'DELETE',
     headers: {
       Authorization: 'Bearer ' + store.user.token

@@ -26,6 +26,7 @@ const updateCharacter = (event) => {
   event.preventDefault()
   const form = event.target
   const data = formFields(form)
+  // console.log(data.id)
   api.updateChar(data)
   .then(ui.charUpdateSuccess)
   .catch(ui.charUpdateFailure)
