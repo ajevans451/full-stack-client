@@ -1,5 +1,5 @@
-# Full-stack Project
-
+# Dungeons and Dragons Character Maker
+This application allows the user to log in and create their own DnD character and save it to their user using the attached API.
 
 ### Important Links
 - [Deployed Client](https://ajevans451.github.io/full-stack-client/)
@@ -24,8 +24,10 @@
 - Bootstrap
 - jQuery
 
-
 #### Unsolved Problems
--
+- I would like to make a modal to display the users character index.
+- I want to format the authentication and character forms to sit next to eachother on the screen rather than stack vertically.
+- I would like to have the action response messages disappear after 3-5 seconds.
+
 #### Wireframe
 ![Wireframe](https://media.git.generalassemb.ly/user/31380/files/62098880-1d3b-11eb-9285-c0db2c8fd743)
