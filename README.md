@@ -7,7 +7,7 @@ This application allows the user to log in and create their own DnD character an
 - [Other Repo](https://github.com/ajevans451/full-stack-api)
 
 ### Planning Story
-
+Given four days initially, I planned for the first two to be mainly focused on the back-end and the devlopment of my API, so the work during these days was limited. But I planned to have the basic HTML for the user sign-in, sign-up, sign-out, and change password done. Due to constant interruptions to the development flow of the back-end, I ended up with the HTML for both the user forms and the character resource forms finished with some basic styling by the end of this period. I was satisfied with the state of the front-end at this point so I discarded my plan to use the next two days on mainly the front-end and returned to developing the back-end. By the third day, the locally hosted client and API were communicating, and the user sign-in/up/out and change password actions were working. On the fourth day, I deployed the client to Github Pages, and the API to Heroku to iron out any issues that arose between the deployments.
 
 #### User Stories
 - As a user, I would like to be able to log in with a unique username and a password.
