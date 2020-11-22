@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>DnD Character Maker</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+      <h1>Dungeons & Dragons Character Maker</h1>
+      <p id='status-message'> </p>
+      <section class='container' id='auth'>
+
+  <!-- sign up form -->
+
+      <form id='sign-up-form'>
+        <h3>Sign Up</h3>
+        <div class='input-group'>
+          <label class='input-group-text'for='sign-up-email'>Email:</label>
+          <input required class='form-control' name='credentials[email]'id='sign-up-email' type='email' placeholder='Email'>
+        </div>
+        <div class='input-group'>
+          <label class='input-group-text' for='sign-up-pw'>Password:</label>
+          <input required class='form-control' name='credentials[password]'id='sign-up-pw' type='password' placeholder='Password'>
+        </div>
+        <div class='input-group'>
+          <label class='input-group-text' for='sign-up-pw-confirm'>Password Confirmation:</label>
+          <input required class='form-control' name='credentials[password_confirmation]'id='sign-up-pw-confirm' type='password' placeholder='Confirm Password'>
+        </div>
+        <input class='input-group-text' type='submit' value="Sign Up">
+      </form>
+
+  <!-- sign in form -->
+
+      <form id='sign-in-form'>
+        <h3>Sign In</h3>
+        <div class='input-group'>
+          <label class='input-group-text' for='sign-in-email'>Email:</label>
+          <input required class='form-control' name='credentials[email]'id='sign-in-email' type='email' placeholder='Email'>
+        </div>
+        <div class='input-group'>
+          <label class='input-group-text' for='sign-in-pw'>Password:</label>
+          <input required class='form-control' name='credentials[password]'id='sign-in-pw' type='password' placeholder='Password'>
+        </div>
+        <input class='input-group-text' type='submit' value="Sign In">
+      </form>
+
+  <!-- change pw form -->
+
+      <form id='change-pw-form'>
+        <h3>Change Password</h3>
+        <div class='input-group'>
+          <label class='input-group-text' for='old-pw'>Old Password:</label>
+          <input required class='form-control' name="passwords[old]"id='old-pw' type='password' placeholder='Password'>
+        </div>
+        <div class='input-group'>
+          <label class='input-group-text' for='new-pw'>New Password:</label>
+          <input required class='form-control' name="passwords[new]"id='new-pw' type='password' placeholder='Password'>
+        </div>
+        <input class='input-group-text' type='submit' value="Change password">
+      </form>
+
+  <!-- sign out form -->
+
+      <form id='sign-out-form'>
+        <h3>Sign Out</h3>
+        <input class='input-group-text' type='submit' value="Sign Out">
+      </form>
+    </section> <section class='container' id='content'>
+
+  <!-- character creation form -->
+
+      <form id='char-create-form'>
+        <h3>Create New Character</h3>
+        <div class='input-group'>
+          <label class='input-group-text' for='char-create-name'>Character Name:</label>
+          <input class='form-control' type='text' name='character[name]' required id='char-create-name' placeholder='Name'>
+        </div>
+        <div class='input-group'>
+          <label class='input-group-text' for='char-create-race'>Character Race:</label>
+          <input class='form-control' type='text' name='character[race]' required id='char-create-race' placeholder='Race'>
+        </div>
+        <div class='input-group'>
+          <label class='input-group-text' for='char-create-class'>Character Class:</label>
+          <input class='form-control' type='text' name='character[class]' required id='char-create-class' placeholder='Class'>
+        </div>
+        <input class='input-group-text' type='submit' value="Create Character">
+      </form>
+
+  <!-- character update form -->
+
+      <form id='char-update-form'>
+        <h3>Update Character</h3>
+        <div class='input-group'>
+          <label class='input-group-text' for='char-update-id'>Character ID:</label>
+          <input class='form-control' type='text' name='character[id]' required id='char-update-id' placeholder='Character ID'> <!-- must update store.character._id to input -->
+        </div>
+        <div class='input-group'>
+          <label class='input-group-text' for='char-update-name'>Character Name:</label>
+          <input class='form-control' type='text' name='character[name]' required id='char-update-name' placeholder='Name'>
+        </div>
+        <div class='input-group'>
+          <label class='input-group-text' for='char-update-race'>Character Race:</label>
+          <input class='form-control' type='text' name='character[race]' required id='char-update-race' placeholder='Race'>
+        </div>
+        <div class='input-group'>
+          <label class='input-group-text' for='char-update-class'>Character Class:</label>
+          <input class='form-control' type='text' name='character[class]' required id='char-update-class' placeholder='Class'>
+        </div>
+        <input class='input-group-text' type='submit' value="Update Character">
+      </form>
+
+  <!-- character index form -->
+
+      <form id='char-index-form'>
+        <h3>Show Characters</h3>
+        <input class='input-group-text' type='submit' value="Show Characters">
+        <p id='char-index-message'> </p> <!-- consider making a modal (stretch goal) -->
+        <div class='row' id=char-index></div>
+      </form>
+
+  <!-- character delete form -->
+
+      <form id='char-delete-form'>
+        <h3>Delete Character</h3>
+        <div class='input-group'>
+          <label class='input-group-text' for='char-delete-id'>Character ID:</label>
+          <input class='form-control' type='text' name='id' required id='char-delete-id' placeholder='Character ID'>
+        </div>
+        <input class='input-group-text' type='submit' value="Delete Character">
+      </form></section>
+    </body>
+</html>
